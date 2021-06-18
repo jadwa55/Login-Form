@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    position: relative;
+    /* border: 1px solid #FF5160; */
+    border: none;
+    box-shadow: rgb(165, 165, 165) 0px 8px 16px;
+    /* overflow: hidden; */
+    border-radius: 5px;
+}
+.card *{
+    border-radius: 5px;
+}
+.right-image{
+    background-color: #a7a7a7;
+    background-blend-mode: multiply;
+}
+a{
+    color: #FF5160;
+}
+.icon{
+    background-color: #FF5160;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-25px;
+}
+.form-control{
+    border-color: #6b6b6b;
+    border-width: 1px;
+    padding: 8px 16px;
+}
+label{
+    text-align: left;
+    margin-left: 5px;
+    /* width: 100%; */
+}
+/* .form-group.row{
+    display: flex;
+    flex-direction: row;
+} */
+.form-group {
+    margin-bottom: 16px;
+    position: relative;
+}
+::placeholder{
+    opacity: .4;
+    font-size: .8rem;
+}
+
+.btn.btn-danger{
+    background-color: #FF5160;
+    box-shadow: #ff516046 0px 3px 8px;
+    border-color: #FF5160;
+}
+.password{
+    position: relative;
+}
+.password i {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+  .form-group>label{
+    position:absolute;
+    top:-7px;
+    left:5px;
+    background-color:white;
+    padding: 0px 8px;
+    font-size: .6rem;
+  }
+  .form-control:focus>label{
+      color: red !important;
+    }
+    .form-control:focus{
+        border-color: red !important;
+        box-shadow: none;
+    }
+
+    input:focus::placeholder{
+        opacity: 0;
+    }
